@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>single product</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <header id="header">
+        <a href="#" id="logo"><img src="../Images/logo2.png" alt="gabaa Horroo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="header_shop">
+            <h1>#shop</h1>
+            <p>You can get all available products in here.</p>
+        </section>
+        <section id="product_details">
+            <div class="single_pro_img">
+                <img src="../Images/fproducts/f1.jpg" width="100%" id="mainImg" alt="">
+
+                <div class="small_img_group">
+                    <div class="small_img_col">
+                        <img src="../Images/fproducts/f1.jpg" width="100%" class="small_img" alt="">
+                    </div>
+                    <div class="small_img_col">
+                        <img src="../Images/fproducts/f2.jpg" width="100%" class="small_img" alt="">
+                    </div>
+                    <div class="small_img_col">
+                        <img src="../Images/fproducts/f3.jpg" width="100%" class="small_img" alt="">
+                    </div>
+                    <div class="small_img_col">
+                        <img src="../Images/fproducts/f4.jpg" width="100%" class="small_img" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="single_prod_details">
+                <h4>Home / T-Shirt</h4>
+                <h2>Men's Fashion T Shirt</h2>
+                <h2>$49.99</h2>
+                <select>
+                    <option>Select size</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                    <option>Small </option>
+                    <option>Large </option>
+                </select>
+                <input type="number" value="1">
+                <button class="detail_button_shop">Add To Cart</button>
+                <h2>Product Details</h2>
+                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Velit voluptatem quia sapiente, accusantium totam sint voluptatibus 
+                    veniam animi illo modi deserunt esse recusandae neque nesciunt rem 
+                    dicta molestiae qui perspiciatis!</span>
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer_col">
+            <img class="logo" src="../Images/logo2.png" alt="gabaa Horroo">
+            <h2>Contact</h2>
+            <h4><strong>Address:</strong> 223 Block Main Campus, Wachemo University, Hossena City </h4>
+            <h4><strong>Phone Number:</strong> +251 948 334 822</h4>
+            <div class="follow">
+                <h3>Follow us</h3>
+                <div class="follow_icon">
+                    <i><img src="../Images/Icons/facebook-30.png" alt="Facebook Icon"> </i>
+                    <i><img src="../Images/Icons/icons8-twitter-30.png" alt="Twitter Icon"> </i>
+                    <i><img src="../Images/Icons/icons8-instagram-30.png" alt="Instagram Icon"> </i>
+                    <i><img src="../Images/Icons/linkedin-30.png" alt="Linkdin Icon"> </i>
+                    <i><img src="../Images/Icons/telegram-30.png" alt="Telegram Icon"> </i>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer_col">
+            <h2>About</h2>
+            <a href="#">About us</a>
+            <a href="#">Delivery Options</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>   
+        </div>
+        <div class="footer_col">
+            <h2>My Account</h2>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">Favorite Items</a>
+            <a href="#">My Order</a>
+            <a href="#">Help Me</a>   
+        </div>
+        <div id="install" class="footer_col">
+            <h2>Install Apps</h2>
+            <h4>App Store or Google Play</h4>
+            <div class="apps_row">
+                <img src="Images/payment/app.jpg" alt="App Store">
+                <img src="Images/payment/play.jpg" alt="Google Play">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2015 EC, Gabaa Horroo - E-Commerce Website Application.All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        var MainImg=document.getElementById("mainImg");
+        var Smallimg=document.getElementsByClassName("small_img");
+        
+        Smallimg[0].onclick = function(){
+            MainImg.src = Smallimg[0].src;
+        }
+        Smallimg[1].onclick = function(){
+            MainImg.src = Smallimg[1].src;
+        }
+        Smallimg[2].onclick = function(){
+            MainImg.src = Smallimg[2].src;
+        }
+        Smallimg[3].onclick = function(){
+            MainImg.src = Smallimg[3].src;
+        }
+    </script>
+</body>
+</html>

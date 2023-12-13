@@ -1,0 +1,121 @@
+
+
+@media(max-width:1099px){
+    /* header of home page */
+    html, body {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right:-300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 22px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 26px;
+    }
+    #sub_one {
+        height: 40vh;
+        padding:0px;
+        text-align: center;
+        background-position: top 30% right 30%;
+    }
+    #feature .p_container {
+        justify-content: center;
+        padding-top: 20px;
+    }
+    #feature .pro_one {
+        margin: 15px;
+    }
+
+    #banner_one {
+        height: 25vh;
+        margin: 0px;
+    }
+    #banner_promtion .banner_prom_one {
+        min-width: 100%;
+        height: 30vh;
+    }
+    #small_banner_prom .small_banners_two {
+        width: 35%;
+        height: 20vh;
+    }
+    #small_banner_prom .small_banners_one {
+        height: 20vh;
+    }
+    #small_banner_prom .small_banners_three {
+        height: 20vh;
+    }
+    #small_banner_prom {
+        height: 18vh;
+    }
+    #payment_ways img {
+        width: 90%;
+        padding: 10px;
+    }
+    #payment_ways .payments_tele {
+        height: 20vh;
+    }
+    #payment_ways .payments_paypal {
+        height: 20vh;
+    }
+    #payment_ways .payments_visa {
+        width: 70%;
+        height: 15vh;
+    }
+    #ls .form{
+        width: 70%;
+    }
+}
+@media(max-width:477px){
+    #header {
+        padding: 10px 20px;
+    }
+    #sub_one {
+        background-position: 55%;
+    }
+    #sub_one h1 {
+        font-size: 32px;
+    }
+    #feature .pro_one {
+        width: 100%;
+    }
+    #banner_one {
+        height: 35vh;
+    }
+    #ls .form{
+        width: 100%;
+    }
+}
